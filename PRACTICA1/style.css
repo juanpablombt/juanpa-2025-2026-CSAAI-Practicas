@@ -127,77 +127,76 @@ h2, h3 {
 }
 
 /* estilos de proyectos */
-        .projects-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            padding: 1rem;
-        }
-        .project-card {
-            background: rgba(0, 32, 28, 0.85);
-            border: 5px solid var(--lima);
-            border-radius: 8px;
-            padding: 1rem;
-            width: 100%;
-            max-width: 300px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-        }
-        /* colores temáticos según la imagen */
-        .project-card.renault {
-            border-color: #0033A0 ; /* amarillo Renault */
-        }
-        .project-card.renault h3 {
-            color: #0033A0 ;
-        }
-        .project-card.ferrari {
-            border-color: #d90000; /* rojo Ferrari */
-        }
-        .project-card.ferrari h3 {
-            color: #d90000;
-        }
-        .project-card.aston {
-            border-color: var(--lima); /* amarillo Renault */
-        }
-        .project-card.aston h3 {
-            color: var(--lima);
-        }
-        .project-card h3 {
-            margin-top: 0;
-            color: var(--lima);
-        }
-        .project-card img {
-            width: 100%;
-            border-radius: 4px;
-            margin-bottom: 0.75rem;
-            object-fit: cover;
-            max-height: 150px;
-        }
-        .project-card p {
-            flex-grow: 1;
-        }
-        .project-card a {
-            margin-top: 1rem;
-            align-self: flex-start;
-            background: var(--accent-lime);
-            color: var(--aston-green);
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        /* botones temáticos */
-        .project-card.renault a {
-            background: #0033A0; /* azul Renault */
-            color: white;
-        }
-        .project-card.ferrari a {
-            background: #d90000; /* rojo Ferrari */
-            color: white;
-        }
-        .project-card.aston a {
-            background: var(--lima); /* amarillo Aston Martin */
-            color: var(--negro);
-        }
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}.project-card {
+    background: rgba(0, 32, 28, 0.85);
+    border: 5px solid var(--lima);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+/* colores temáticos según la imagen */
+.project-card.renault {
+    border-color: #0033A0 ; /* amarillo Renault */
+}
+.project-card.renault h3 {
+    color: #0033A0 ;
+}
+.project-card.ferrari {
+    border-color: #d90000; /* rojo Ferrari */
+}
+.project-card.ferrari h3 {
+    color: #d90000;
+}
+.project-card.aston {
+    border-color: var(--lima); /* amarillo Renault */
+}
+.project-card.aston h3 {
+    color: var(--lima);
+}
+.project-card h3 {
+    margin-top: 0;
+    color: var(--lima);
+}
+.project-card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+    object-fit: cover;
+    max-height: 150px;
+}
+.project-card p {
+    flex-grow: 1;
+}
+.project-card a {
+    margin-top: 1rem;
+    align-self: flex-start;
+    background: var(--lima);
+    color: var(--negro);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* botones temáticos */
+.project-card.renault a {
+    background: #0033A0; /* azul Renault */
+    color: white;
+}
+.project-card.ferrari a {
+    background: #d90000; /* rojo Ferrari */
+    color: white;
+}
+.project-card.aston a {
+    background: var(--lima); /* amarillo Aston Martin */
+    color: var(--negro);
+}
