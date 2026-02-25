@@ -1,0 +1,203 @@
+:root { 
+    --lima: #c4d600;
+    --rojo: #e10600;
+    --negro: #0b0b0b;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: white;
+
+    background-image: url('fondo.jpg'); 
+    background-attachment: fixed; /* Efecto de scroll */
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    background-color: var(--negro);
+    border-bottom: solid var(--rojo);
+    padding: 1rem 5%;
+    gap: 15px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block; /* Permite que el padding y la animación funcionen bien */
+}
+
+.navbar a:hover {
+    background-color: var(--lima);
+    color: var(--negro);
+    transform: translateY(-2px);
+}
+
+/*Sección principal*/
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.main-img {
+    width: 450px; 
+    height: 450px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 5px solid var(--lima);
+    box-shadow: 0 0 20px var(--lima);
+    transition: transform 0.4s ease;
+}
+
+.main-img:hover {
+    transform: scale(1.05); /* Se agranda un poco más al pasar el ratón */
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--lima);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+
+/* Cajas de texto*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.bio-section, .info-card {
+    background: var(rgba(0, 32, 28, 0.85));
+    border-left: 6px solid var(--rojo);
+    padding: 40px;
+    border-radius: 0 15px 15px 0;
+    backdrop-filter: blur(8px);
+    margin-bottom: 30px;
+}
+
+h2, h3 {
+    color: var(--lima);
+    margin-top: 0;
+}
+
+/* Estilo para aceca de*/
+
+.about-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid var(--lima);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.glass-content {
+    background: var(--glass);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border-right: 8px solid var(--rojo); /* Simetría con la index */
+    line-height: 1.8;
+}
+
+/* estilos de proyectos */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .project-card {
+            background: rgba(0, 32, 28, 0.85);
+            border: 5px solid var(--lima);
+            border-radius: 8px;
+            padding: 1rem;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+        }
+        /* colores temáticos según la imagen */
+        .project-card.renault {
+            border-color: #0033A0 ; /* amarillo Renault */
+        }
+        .project-card.renault h3 {
+            color: #0033A0 ;
+        }
+        .project-card.ferrari {
+            border-color: #d90000; /* rojo Ferrari */
+        }
+        .project-card.ferrari h3 {
+            color: #d90000;
+        }
+        .project-card.aston {
+            border-color: var(--lima); /* amarillo Renault */
+        }
+        .project-card.aston h3 {
+            color: var(--lima);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--lima);
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+            object-fit: cover;
+            max-height: 150px;
+        }
+        .project-card p {
+            flex-grow: 1;
+        }
+        .project-card a {
+            margin-top: 1rem;
+            align-self: flex-start;
+            background: var(--accent-lime);
+            color: var(--aston-green);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* botones temáticos */
+        .project-card.renault a {
+            background: #0033A0; /* azul Renault */
+            color: white;
+        }
+        .project-card.ferrari a {
+            background: #d90000; /* rojo Ferrari */
+            color: white;
+        }
+        .project-card.aston a {
+            background: var(--lima); /* amarillo Aston Martin */
+            color: var(--negro);
+        }
