@@ -1,0 +1,139 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+/* Display del cronómetro */
+#display {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Clave secreta */
+#secret-key {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.digit {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    line-height: 30px;
+    border-radius: 5px;
+    color: gray;
+}
+
+/* Intentos y contador */
+#attempts, #counter {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+#status {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 1.2em;
+}
+
+/* Botones numéricos */
+.numbers {
+    display: grid;
+    grid-template-areas:
+        "seven eight nine"
+        "four five six"
+        "one two three"
+        ". zero .";
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(4, 60px);
+    gap: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.digito[value="7"] { grid-area: seven; }
+.digito[value="8"] { grid-area: eight; }
+.digito[value="9"] { grid-area: nine; }
+.digito[value="4"] { grid-area: four; }
+.digito[value="5"] { grid-area: five; }
+.digito[value="6"] { grid-area: six; }
+.digito[value="1"] { grid-area: one; }
+.digito[value="2"] { grid-area: two; }
+.digito[value="3"] { grid-area: three; }
+.digito[value="0"] { grid-area: zero; }
+
+.digito {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.digito:hover {
+    background-color: #45a049;
+}
+
+.used {
+    opacity: 0.5;
+    background-color: #ccc !important;
+    cursor: not-allowed;
+}
+
+/* Botones de control */
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+#start, #stop, #reset {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start:hover {
+    background-color: #0b7dda;
+}
+
+#stop:hover {
+    background-color: #0b7dda;
+}
+
+#reset:hover {
+    background-color: #0b7dda;
+}
