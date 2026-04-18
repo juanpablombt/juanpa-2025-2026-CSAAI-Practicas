@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat The Word - Juego</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Beat The Word</h1>
+        </header>
+
+        <section id="controls" class="panel">
+            <div class="control-group">
+                <label for="pair-selector">Pareja:</label>
+                <select id="pair-selector">
+                    <option value="casa-cama">Casa / Cama</option>
+                    <option value="sol-sal">Sol / Sal</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="level-selector">Nivel Inicial:</label>
+                <select id="level-selector">
+                    <option value="1">Nivel 1</option>
+                    <option value="2">Nivel 2</option>
+                    <option value="3">Nivel 3</option>
+                    <option value="4">Nivel 4</option>
+                    <option value="5">Nivel 5</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button id="btn-start">Comenzar</button>
+                <button id="btn-stop" disabled>Detener</button>
+                <button id="btn-music">🎵 Música: OFF</button>
+            </div>
+        </section>
+
+        <section id="status-display" class="panel">
+            <div class="stat">Nivel: <span id="current-level">-</span></div>
+            <div class="stat">Tiempo: <span id="timer">0.0s</span></div>
+            <div class="stat">Estado: <span id="game-state">Esperando...</span></div>
+        </section>
+
+        <main id="game-area">
+            <div id="word-display">¡Prepárate!</div>
+            <div class="grid" id="grid">
+                <!-- 8 imágenes generadas por JS -->
+                <div class="cell" id="cell-0"></div>
+                <div class="cell" id="cell-1"></div>
+                <div class="cell" id="cell-2"></div>
+                <div class="cell" id="cell-3"></div>
+                <div class="cell" id="cell-4"></div>
+                <div class="cell" id="cell-5"></div>
+                <div class="cell" id="cell-6"></div>
+                <div class="cell" id="cell-7"></div>
+            </div>
+        </main>
+
+        <audio id="bg-music" loop>
+            <source src="musica_fondo.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
